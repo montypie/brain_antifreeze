@@ -1,1 +1,0 @@
-<P>BINGO! It is <span style='color:white;font-weight:bold'></span>!!!<P><a href='index.php'><span style='color:white'>One more time?</span></a><P>BINGO! It is <span style='color:white;font-weight:bold'></span>!!!<P><a href='index.php'><span style='color:white'>One more time?</span></a>
