@@ -1,0 +1,26 @@
+X:1
+T:Minuet No. 1 - Piano Accompaniment
+C:J. S. Bach
+M:3/4
+L:1/4
+Q:1/4=112
+K:C
+V:1 clef=treble
+V:2 clef=bass
+
+% Measures 1 - 6
+[V:1] [EG] [EG] [EG] | [DF] [DF] [DF] | [CE] [CE] [CE] | [DG] [DG] [DG] | [CE] [CE] [CE] | [DFB]3 |
+[V:2] C, B,, A,,     | G,, A,, B,,     | C, B,, C,,     | G,, D,/2C,/2 B,,/2A,,/2 | G,, C,/2B,,/2 A,,/2G,,/2 | G,,3 |
+
+% Measures 7 - 12
+[V:1] |: [CE]3 | [CE]3 :| [EG] [EG] [EG] | [E^G] [E^G] [E^G] | [^FA] [FA] [FA] | [^FA]3 |
+[V:2] |: C,,3  | C,,3  :| C, B,, A,,     | E, D, C,         | A, G, F,       | D, D,/2C,/2 B,,/2A,,/2 |
+
+% Measures 13 - 18
+[V:1] [CE]3 | [CE]3 | [^FA] [EG] [DF] | [EG]3 | [EG] [EG] [EG] | [DF]3 |
+[V:2] C,3   | C,3   | D, C, B,,       | C, G,,/2A,,/2 B,,/2C,/2 | C, B,, A,, | G,,3 |
+
+% Measures 19 - 24
+[V:1] [CE]3 | [DF] [DF] [DF] | [CE]3 | [CE]3 | [DF]3 | [CE]3 |]
+[V:2] C,3   | G,, A,, B,,     | C,3   | C,3   | G,,3  | C,,3  |]
+
