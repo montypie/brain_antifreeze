@@ -1,0 +1,13 @@
+[project]
+name = "brain-antifreeze"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "music21>=8.3.0",
+    "numpy>=2.0.2",
+    "pandas>=2.3.3",
+    "pretty-midi>=0.2.11.post0",
+    "requests>=2.32.5",
+    "scipy>=1.13.1",
+    "urllib3<2",
+]
