@@ -1,0 +1,32 @@
+X:1
+T:Minuet No. 1
+C:J. S. Bach
+M:3/4
+L:1/8
+Q:1/4=110
+K:C
+%%staves 1 {(2) (3)}
+
+V:1 clef=bass name="Solo"
+V:2 clef=treble name="Piano RH"
+V:3 clef=bass name="Piano LH"
+
+% --- System 1 (mm. 1-6) ---
+[V:1] !mf! C2 (G,2 C2) | D2 (E F) G2 | C2 C2 C2 | D2 (C B,) A,2 | B,2 (G, A,) B,2 | C D E F E D |
+[V:2] !mf! [eg]2 [eg]2 [eg]2 | [df]2 [df]2 [df]2 | [eg]6 | [df]6 | [eg]6 | [Bd]6 |
+[V:3] !mf! C2 B,2 A,2 | G,2 F,2 E,2 | C2 B,2 A,2 | G,2 A,G, F,E, | F,2 E,2 D,2 | G,2 G,,4 |
+
+% --- System 2 (mm. 7-12) ---
+[V:1] C2 (G, F,) G,2 |1 C6 :|2 C6 |: !p! G2 (c d) e2 | F2 (B c) d2 | E2 (A B) c2 |
+[V:2] [eg]2 [eg]2 [eg]2 |1 [df]6 :|2 [ce]6 |: !p! [eg]6 | [df]2 [^fa]2 [^fa]2 | [eg]2 [^gb]2 [^gb]2 |
+[V:3] C2 B,2 A,2 |1 G,2 A,G, F,E, :|2 C,6 |: !p! C2 B,2 A,2 | B,2 A,2 G,2 | C2 B,2 A,2 |
+
+% --- System 3 (mm. 13-18) ---
+[V:1] !mf! D2 G A B c | d6 | G6 | !p! C2 (G, A,) B,2 | C2 (E F) G2 | C2 (G, A,) B,2 |
+[V:2] [^fa]2 [^fa]2 [^fa]2 | !mf! [eg]6 | [df]6 | !p! [ce]6 | [df]6 | [eg]6 |
+[V:3] D2 C2 CB, | !mf! A,2 G,2 F,2 | E,2 D,2 C,2 | F,6 | G,2 A,B, CD | !p! C2 B,2 A,2 |
+
+% --- System 4 (mm. 19-24) ---
+[V:1] C2 (G, A,) B,2 | C6 | !mf! C D E F E D | E D C B, A, G, | "rit. 2nd time" C2 G,2 G,2 | !fermata!C6 |]
+[V:2] [df]6 | [eg]6 | !mf! [df]6 | [eg]6 | "rit. 2nd time" [eg]4 [df]2 | !fermata![ce]6 |]
+[V:3] G,2 F,2 E,2 | C2 B,2 A,2 | G,2 F,2 E,2 | !mf! F,2 E,2 D,E, | "rit. 2nd time" G,6 | !fermata!C,6 |]
