@@ -13,7 +13,8 @@ def parse_abc_to_midi(abc_path: Path, temp_midi_path: Path) -> None:
     score = music21.converter.parse(str(abc_path))
     if score is not None:
         score = score.makeMeasures()
-        score.write("midi", fp=str(temp_midi_path))
+        if score is not None:
+            score.write("midi", fp=str(temp_midi_path))
 
 
 def synthesize_midi_to_mp3(
