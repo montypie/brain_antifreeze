@@ -8,19 +8,10 @@ K:C
 V:1 clef=treble
 V:2 clef=bass
 
-% Measures 1 - 6
-[V:1] [EG] [EG] [EG] | [DF] [DF] [DF] | [CE] [CE] [CE] | [DG] [DG] [DG] | [CE] [CE] [CE] | [DFB]3 |
-[V:2] C, B,, A,,     | G,, A,, B,,     | C, B,, C,,     | G,, D,/2C,/2 B,,/2A,,/2 | G,, C,/2B,,/2 A,,/2G,,/2 | G,,3 |
+% Measures 1 - 4
+[V:1] [EGc]3 | [DGb]3 | [CEc]3 | [F,B,d]3 |
+[V:2] C, [G,C] [G,C] | B,, [G,D] [G,D] | A,, [EA] [EA] | G,, [DG] [DG] |
 
-% Measures 7 - 12
-[V:1] |: [CE]3 | [CE]3 :| [EG] [EG] [EG] | [E^G] [E^G] [E^G] | [^FA] [FA] [FA] | [^FA]3 |
-[V:2] |: C,,3  | C,,3  :| C, B,, A,,     | E, D, C,         | A, G, F,       | D, D,/2C,/2 B,,/2A,,/2 |
-
-% Measures 13 - 18
-[V:1] [CE]3 | [CE]3 | [^FA] [EG] [DF] | [EG]3 | [EG] [EG] [EG] | [DF]3 |
-[V:2] C,3   | C,3   | D, C, B,,       | C, G,,/2A,,/2 B,,/2C,/2 | C, B,, A,, | G,,3 |
-
-% Measures 19 - 24
-[V:1] [CE]3 | [DF] [DF] [DF] | [CE]3 | [CE]3 | [DF]3 | [CE]3 |]
-[V:2] C,3   | G,, A,, B,,     | C,3   | C,3   | G,,3  | C,,3  |]
-
+% Measures 5 - 8
+[V:1] [E,A,c]3 | [D,G,B]3 | [C,F,A] [D,G,B] [E,A,c] | [D,G,B]3 |
+[V:2] F,, [CF] [CF] | E,, [B,E] [B,E] | D,, [A,D] D,, | G,, [D,G,] G,, |
