@@ -19,13 +19,12 @@ Rules:
 - Chronological order by date. For entries sharing the same date, an entry
   that starts with a ## heading comes before one(s) that don't; ties beyond
   that keep the original order in the source file.
-"""
+"""  # noqa: EXE001
 
+import argparse
 import re
 from datetime import date
 from pathlib import Path
-
-SOURCE_FILE = "deti.md"
 
 ENTRY_HEADER_RE = re.compile(
     r"^\[(\d{4}-\d{2}-\d{2})\]\s*((?:#\S+\s*)+)$",
@@ -66,8 +65,11 @@ def sort_key(entry):
 
 
 def main():
-    script_dir = Path(__file__).resolve().parent
-    source_path = script_dir / SOURCE_FILE
+    parser = argparse.ArgumentParser(description="Split a markdown file per tag.")
+    parser.add_argument("file", help="Input markdown file")
+    args = parser.parse_args()
+
+    source_path = Path(args.file)
 
     if not source_path.exists():
         raise SystemExit(f"Source file not found: {source_path}")
@@ -86,7 +88,7 @@ def main():
             key=sort_key,
         )
         content = "\n\n".join(e["body"] for e in tag_entries) + "\n"
-        out_path = script_dir / f"{tag}.md"
+        out_path = source_path.parent / f"{tag}.md"
         out_path.write_text(content, encoding="utf-8")
         print(f"Wrote {len(tag_entries)} entries to {out_path.name}")
 
