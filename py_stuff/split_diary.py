@@ -16,7 +16,7 @@ Rules:
 - An entry tagged with multiple tags is copied into each tag's file.
 - Output files: no dates, no tags line; the ## heading (if present) and body
   are kept exactly as written; entries separated by a single blank line.
-- Chronological order by date. For entries sharing the same date, an entry
+- Chronological order by date. For entries with multiple tags sharing the same date, an entry
   that starts with a ## heading comes before one(s) that don't; ties beyond
   that keep the original order in the source file.
 """  # noqa: EXE001
