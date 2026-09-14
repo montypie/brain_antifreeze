@@ -1,14 +1,16 @@
 [project]
 name = "brain-antifreeze"
 version = "0.1.0"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 dependencies = [
     "lameenc>=1.8.2",
     "music21>=8.3.0",
     "numpy>=2.0.2",
     "pandas>=2.3.3",
+    "plotly>=7.0.0",
     "pretty-midi>=0.2.11.post0",
     "requests>=2.32.5",
     "scipy>=1.13.1",
+    "streamlit>=1.63.0",
     "urllib3<2",
 ]
