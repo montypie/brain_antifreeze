@@ -1,9 +1,8 @@
 import pandas as pd
 import plotly.graph_objects as go
 import requests
+import streamlit as st
 from plotly.subplots import make_subplots
-
-# import streamlit as st
 
 
 def fetch_weather_data(latitude, longitude, past_days=7):
@@ -96,7 +95,7 @@ def create_figure(df):
             x=df["date"],
             y=df["pressure_kpa"],
             mode="lines+markers",
-            line=dict(color="purple", width=2),
+            line=dict(color="darkgreen", width=2),
             showlegend=False,
             name="Pressure",
         ),
@@ -117,7 +116,11 @@ def create_figure(df):
 
 
 if __name__ == "__main__":
-    data = fetch_weather_data(latitude=50.88, longitude=4.70)
+    past_days = st.select_slider(
+        "Days in the past", options=list(range(62, 0, -1)), value=7
+    )
+    data = fetch_weather_data(latitude=50.88, longitude=4.70, past_days=past_days)
     df = to_dataframe(data)
+
     fig = create_figure(df)
-    fig.show()
+    st.plotly_chart(fig, use_container_width=True)
