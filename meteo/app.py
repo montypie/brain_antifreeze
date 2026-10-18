@@ -123,4 +123,4 @@ if __name__ == "__main__":
     df = to_dataframe(data)
 
     fig = create_figure(df)
-    st.plotly_chart(fig, use_container_width=True, config={"staticPlot": True})
+    st.plotly_chart(fig, width="stretch", config={"staticPlot": True})
