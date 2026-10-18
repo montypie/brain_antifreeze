@@ -68,7 +68,7 @@ def create_figure(df):
             mode="lines",
             line=dict(width=0),
             fill="tonexty",
-            fillcolor="rgba(255,127,14,0.3)",
+            fillcolor="rgba(239, 85, 59, 0.25)",
             showlegend=False,
             name="Min",
         ),
@@ -123,4 +123,4 @@ if __name__ == "__main__":
     df = to_dataframe(data)
 
     fig = create_figure(df)
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True, config={"staticPlot": True})
